@@ -19,9 +19,15 @@ namespace LibTransportes.Entidades
             Color = color;
         }
 
-        public virtual string Acelerar();
+        public override string Acelerar()
+        {
+            return "El auto esta acelerando";
+        }
 
-        public abstract string Frenar();
+        public override string Frenar()
+        {
+            return "El auto freno";
+        }
 
     }
 }

@@ -17,8 +17,15 @@ namespace LibTransportes.Entidades
             public string BateriaDuracion { get; set; }
             public string Voltaje { get; set; }
 
-        public abstract string Acelerar();
+        public override string Acelerar()
+        {
+            return "El auto esta acelerando";
+        }
 
-        public abstract string Frenar();   
+        public override string Frenar()
+        {
+            return "El auto freno";
+        }
+
     }
 }
